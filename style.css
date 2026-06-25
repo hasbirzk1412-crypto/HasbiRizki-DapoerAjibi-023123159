@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #faf7ff;
+  color: #2d1b4e;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+  color: #7c3aed;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a:hover {
+  color: #7c3aed;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  padding: 60px 5%;
+  align-items: center;
+  gap: 40px;
+  background: linear-gradient(135deg, #ede9fe, #faf5ff);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.tombol {
+  background: #7c3aed;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.tombol:hover {
+  background: #5b21b6;
+}
+
+/* PRODUK */
+.section-produk {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card span {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #7c3aed;
+}
+
+.btn-tambah {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+/* CARA PESAN */
+.section-cara-pesan {
+  padding: 60px 5%;
+  background: #f3e8ff;
+}
+
+.langkah-list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.langkah-list li {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* KONTAK */
+.section-kontak {
+  padding: 60px 5%;
+}
+
+.kontak-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #7c3aed;
+  color: white;
+}
